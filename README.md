@@ -2,7 +2,7 @@
 Generating an open recipe dataset with Python, Scrapy, and xpath. 
 
 ## Usage
-For default usage run **__main__.py**. This will create a json file containing recipe details in the directory **/open-recipe/data/output.**
+For default usage run **\_\_main\_\_.py**. This will create a json file containing recipe details in the directory **/open-recipe/data/output.**
 
 For more advanced usage create a Controller object. The controller object has two arguments - verbose and sample. 
 If verbose is true further detailed scrapy text will be output to the console. 
