@@ -1,5 +1,5 @@
 # Open Recipe
-Generating an Open Recipe Database with Python, Scrapy, and xpath. 
+Generating an open recipe dataset with Python, Scrapy, and xpath. 
 
 # Usage
 
