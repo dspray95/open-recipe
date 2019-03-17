@@ -12,4 +12,4 @@ If sample is greater than 0, the crawler will only run for n=sample urls. This i
 Currently only supports recipes from BBC Good Food. 
 
 ## Acknowledgements
-Initial csv containing the list of URLs taken from /u/draeg82 (twitter @givemearecipe)  (https://www.reddit.com/r/datasets/comments/an6n26/are_there_any_freetouse_or_opensource_recipe/)
+Initial csv containing the list of URLs taken from /u/draeg82 (Twitter @givemearecipe)  (https://www.reddit.com/r/datasets/comments/an6n26/are_there_any_freetouse_or_opensource_recipe/)
