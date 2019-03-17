@@ -1,0 +1,41 @@
+oauthlib integration for Google Auth
+====================================
+
+|pypi|
+
+This library provides `oauthlib`_ integration with `google-auth`_.
+
+.. |build| image:: https://travis-ci.org/GoogleCloudPlatform/google-auth-library-python-oauthlib.svg?branch=master
+   :target: https://travis-ci.org/GoogleCloudPlatform/google-auth-library-python-oauthlib
+.. |docs| image:: https://readthedocs.org/projects/google-auth-oauthlib/badge/?version=latest
+   :target: https://google-auth-oauthlib.readthedocs.io/en/latest/
+.. |pypi| image:: https://img.shields.io/pypi/v/google-auth-oauthlib.svg
+   :target: https://pypi.python.org/pypi/google-auth-oauthlib
+
+.. _oauthlib: https://github.com/idan/oauthlib
+.. _google-auth: https://github.com/GoogleCloudPlatform/google-auth
+
+Installing
+----------
+
+You can install using `pip`_::
+
+    $ pip install google-auth-oauthlib
+
+.. _pip: https://pip.pypa.io/en/stable/
+
+Documentation
+-------------
+
+The latest documentation is available at `google-auth-oauthlib.readthedocs.io`_.
+
+.. _google-auth-oauthlib.readthedocs.io: http://google-auth-oauthlib.readthedocs.io/
+
+License
+-------
+
+Apache 2.0 - See `the LICENSE`_ for more information.
+
+.. _the LICENSE: https://github.com/GoogleCloudPlatform/google-auth-library-python/blob/master/LICENSE
+
+

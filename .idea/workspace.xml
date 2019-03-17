@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c63abc91-3a63-4cea-aa2d-2e9b25a44526" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/recipe.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/recipe_builder/recipe_builder/spiders/recipe.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/recipe_builder/recipe_builder/spiders/recipe.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,8 +13,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/kuhker_api$builder.coverage" NAME="builder Coverage Results" MODIFIED="1552839409568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/kuhker_api$builder.coverage" NAME="builder Coverage Results" MODIFIED="1552842775249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/kuhker_api$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1552826004930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/kuhker_api$controller.coverage" NAME="controller Coverage Results" MODIFIED="1552842937926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1639732601">
@@ -23,37 +24,39 @@
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cfg" value="1" />
-          <entry key="csv" value="2" />
-          <entry key="json" value="29" />
-          <entry key="py" value="9" />
+          <entry key="csv" value="5" />
+          <entry key="json" value="30" />
+          <entry key="py" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CSV" value="2" />
           <entry key="Ini" value="1" />
-          <entry key="JSON" value="29" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="9" />
+          <entry key="JSON" value="30" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Python" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="34" />
+          <entry key="dummy" value="48" />
           <entry key="json" value="8" />
-          <entry key="py" value="5561" />
+          <entry key="py" value="7127" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="8" />
-          <entry key="PLAIN_TEXT" value="34" />
-          <entry key="Python" value="5561" />
+          <entry key="PLAIN_TEXT" value="48" />
+          <entry key="Python" value="7127" />
         </counts>
       </usages-collector>
     </session>
@@ -63,22 +66,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/recipe_builder/recipe_builder/spiders/recipe.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1008">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="-1271">
+              <caret line="17" column="48" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="48" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
-                <marker date="1552839508075" expanded="true" signature="91:92" ph="..." />
-                <marker date="1552839508075" expanded="true" signature="181:190" ph="..." />
+                <marker date="1552843012528" expanded="true" signature="881:882" ph="..." />
+                <marker date="1552843012528" expanded="true" signature="973:982" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-16-16-50.json">
+        <entry file="file://$PROJECT_DIR$/src/controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="390">
+              <caret line="50" column="27" lean-forward="true" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/recipe.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="912">
-              <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+            <state relative-caret-position="164">
+              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
               <folding>
                 <marker date="1552837079970" expanded="true" signature="656:657" ph="..." />
               </folding>
@@ -119,6 +125,7 @@
         <option value="$PROJECT_DIR$/data/output.json" />
         <option value="$PROJECT_DIR$/src/builder.py" />
         <option value="$PROJECT_DIR$/src/recipe.py" />
+        <option value="$PROJECT_DIR$/src/controller.py" />
         <option value="$PROJECT_DIR$/src/recipe_builder/recipe_builder/spiders/recipe.py" />
       </list>
     </option>
@@ -129,7 +136,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1057" />
@@ -140,6 +147,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,16 +166,10 @@
               <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="output" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="kuhker-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kuhker-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -178,9 +180,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documents\PycharmProjects\kuhker-api\data\input" />
       <recent name="D:\Documents\PycharmProjects\kuhker-api\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documents\PycharmProjects\kuhker-api\data" />
       <recent name="D:\Documents\PycharmProjects\kuhker-api\data\input" />
       <recent name="D:\Documents\PycharmProjects\kuhker-api\src" />
     </key>
@@ -197,7 +201,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.builder">
+  <component name="RunManager" selected="Python.controller">
     <configuration name="__main__" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="kuhker-api" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -242,12 +246,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="controller" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="kuhker-api" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/controller.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.__main__" />
       <item itemvalue="Python.builder" />
+      <item itemvalue="Python.controller" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.controller" />
         <item itemvalue="Python.builder" />
         <item itemvalue="Python.__main__" />
       </list>
@@ -267,16 +295,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <frame x="953" y="0" width="974" height="1057" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12633263" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26477024" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32461873" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3943355" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32453245" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3938394" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -284,7 +311,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33442265" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.33773378" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -327,7 +354,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/recipe_builder/recipe_builder/spiders/recipe.py</url>
-          <line>60</line>
+          <line>64</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
@@ -365,9 +392,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/output.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/output.csv" />
     <entry file="file://$PROJECT_DIR$/src/recipe_builder/scrapy.cfg">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -380,55 +405,17 @@
     <entry file="file://$PROJECT_DIR$/src/output.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/output.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/input/recipes.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-101527">
-          <caret line="49654" column="26" selection-start-line="49654" selection-start-column="8" selection-end-line="49654" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output-2019-03-17-12-37-29.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-04-08.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-03-06.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-02-39.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-02-11.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-04-20.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-05-15.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-12-06.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-14-01.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/output.json" />
+    <entry file="file://$PROJECT_DIR$/data/input/recipes.csv" />
+    <entry file="file://$PROJECT_DIR$/data/output-2019-03-17-12-37-29.json" />
+    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-04-08.json" />
+    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-03-06.json" />
+    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-02-39.json" />
+    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-02-11.json" />
+    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-04-20.json" />
+    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-05-15.json" />
+    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-12-06.json" />
+    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-14-01.json" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/parsel/selector.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -436,70 +423,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-36-12.json">
+    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-36-12.json" />
+    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-45-09.json" />
+    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-46-22.json" />
+    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-47-03.json" />
+    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-16-13-19.json" />
+    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-16-11-55.json" />
+    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-16-13-41.json" />
+    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-16-15-52.json" />
+    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-16-16-50.json" />
+    <entry file="file://$PROJECT_DIR$/data/recipes - recipes.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-45-09.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-46-22.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-15-47-03.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <marker date="1552834842617" expanded="true" signature="153:155" ph="..." />
-            <marker date="1552834842617" expanded="true" signature="172:177" ph="..." />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/data/input/recipes - recipes.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-16-13-19.json">
+    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-17-15-38.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-16-11-55.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-16-13-41.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="1601" selection-start-line="1" selection-start-column="1601" selection-end-line="1" selection-end-column="1601" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-16-15-52.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/2019-03-17-16-16-50.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/recipe.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        <state relative-caret-position="164">
+          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
           <folding>
             <marker date="1552837079970" expanded="true" signature="656:657" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="50" column="27" lean-forward="true" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/recipe_builder/recipe_builder/spiders/recipe.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1008">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="-1271">
+          <caret line="17" column="48" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="48" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
-            <marker date="1552839508075" expanded="true" signature="91:92" ph="..." />
-            <marker date="1552839508075" expanded="true" signature="181:190" ph="..." />
+            <marker date="1552843012528" expanded="true" signature="881:882" ph="..." />
+            <marker date="1552843012528" expanded="true" signature="973:982" ph="..." />
           </folding>
         </state>
       </provider>
