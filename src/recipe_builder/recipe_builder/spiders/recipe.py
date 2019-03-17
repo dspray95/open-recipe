@@ -1,16 +1,36 @@
 # -*- coding: utf-8 -*-
 import scrapy
+import csv
 from src.recipe import Recipe, Nutrition
+
 
 class RecipeSpider(scrapy.Spider):
     name = 'recipe'
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.start_urls = [
-            'https://www.bbcgoodfood.com/recipes/775660/bigbatch-bolognese/',
-            'https://www.bbcgoodfood.com/recipes/3193/buttered-sprouts-with-pancetta'
-        ]
+        self.start_urls = self.get_urls_from_data("../data/input/recipes.csv")['bbc']
+
+    @staticmethod
+    def get_urls_from_data(data_path: str):
+        """
+        Finds and returns a list of URLs from the recipes.csv dataset.
+        :param data_path:
+        :return:
+        """
+        bbc_urls = []
+        all_recipes_urls = []
+        with open(data_path) as csv_file:
+            csv_reader = csv.reader(csv_file)
+            for index, row in enumerate(csv_reader):
+                if bbc_urls.__len__() < 10:
+                    if "www.bbcgoodfood.com" in row[0]:
+                        bbc_urls.append(row[0])
+
+        return {
+            "bbc": bbc_urls,
+            "all_recipes": all_recipes_urls
+        }
 
     def parse(self, response):
         # Information from header includes title, author, cook time, difficulty, servings
