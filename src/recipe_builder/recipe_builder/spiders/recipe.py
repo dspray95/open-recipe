@@ -1,9 +1,16 @@
 # -*- coding: utf-8 -*-
 import scrapy
+from src.recipe import Recipe, Nutrition
 
 class RecipeSpider(scrapy.Spider):
     name = 'recipe'
-    start_urls = []
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.start_urls = [
+            'https://www.bbcgoodfood.com/recipes/775660/bigbatch-bolognese/',
+            'https://www.bbcgoodfood.com/recipes/3193/buttered-sprouts-with-pancetta'
+        ]
 
     def parse(self, response):
         # Information from header includes title, author, cook time, difficulty, servings
@@ -22,10 +29,9 @@ class RecipeSpider(scrapy.Spider):
         # TODO Check for final method step, sometimes the beeb offers a suggestion with a link to another recipe
         method = details.xpath('section[contains(@id, "recipe-method")]//'
                                'div[contains(@class, "method")]/ol/li/p/text()')
-        yield{
-            'title': recipe_title.get(),
-            'author': attrib.get(),
-            'ingredients': ingredients.getall(),
-            'method': method.getall()
-        }
+
+        nutrition_object = Nutrition("kcal", "fat", "saturates", "carbs", "sugar", "fibre", "protein", "salt")
+        recipe_object = Recipe(recipe_title.get(), attrib.get(), nutrition_object, ingredients.getall(), method.getall())
+        # self, name, author, nutrition, ingredients, method
+        return recipe_object.to_dict()
         pass
