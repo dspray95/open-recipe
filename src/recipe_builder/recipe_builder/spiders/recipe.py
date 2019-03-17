@@ -4,7 +4,7 @@ import csv
 from src.recipe import Recipe, Nutrition
 
 
-def get_urls_from_data(data_path: str, sample=0):
+def get_urls_from_data(data_path: str, sample):
     """
     Finds and returns a list of URLs from the recipes.csv dataset.
     :param data_path: path to the input csv list
@@ -29,11 +29,11 @@ def get_urls_from_data(data_path: str, sample=0):
 
 
 class GoodFoodSpider(scrapy.Spider):
-    name = 'recipe'
+    name = 'goodfood'
 
-    def __init__(self, **kwargs):
+    def __init__(self, sample=0, **kwargs):
         super().__init__(**kwargs)
-        self.start_urls = get_urls_from_data("../data/input/recipes.csv", sample=10)['bbc']
+        self.start_urls = get_urls_from_data("../data/input/recipes.csv", sample)['bbc']
 
     def parse(self, response):
         # Information from header includes title, author, cook time, difficulty, servings

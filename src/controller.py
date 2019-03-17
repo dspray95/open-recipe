@@ -23,16 +23,18 @@ class Controller:
             urllib.request.urlretrieve(recipe_csv_url, directory + '/' + filename)
 
     @staticmethod
-    def run_spider(verbose=False):
+    def run_spider(verbose=False, sample=0):
         """
         Sets up a scrapy CrawlerProcess and performs crawling for AllRecipes and BBC Good Food
         Spiders
         :param verbose: prints additional information when true
+        :param sample: If greater than 0, will only crawl for n=sample urls
         """
         # Check to make sure we have the recipes csv downloaded
         Controller.get_recipes_url_list()
+
         # Scrapy spider setup
-        spider = GoodFoodSpider()
+        spider = GoodFoodSpider(sample=sample)
         process = CrawlerProcess({
             'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)',
             'FEED_FORMAT': "json",
@@ -41,7 +43,7 @@ class Controller:
 
         # Start crawling
         data = []
-        process.crawl(spider)
+        process.crawl(spider, sample=sample)
         process.start()
         if verbose:
             print(data)

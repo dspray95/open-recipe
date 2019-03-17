@@ -1,4 +1,4 @@
 from controller import Controller
 
 controller = Controller()
-controller.run_spider(True)
+controller.run_spider(verbose=False, sample=5)
