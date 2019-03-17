@@ -46,6 +46,3 @@ class Controller:
         if verbose:
             print(data)
 
-
-controller = Controller()
-controller.run_spider(True)

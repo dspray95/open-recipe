@@ -41,7 +41,8 @@ class GoodFoodSpider(scrapy.Spider):
         header = response.xpath('//div[contains(@class, "recipe-header")]')
         recipe_title = header.xpath('h1[contains(@class, "recipe-header__title")]/text()')
         attrib = header.xpath('//div[contains(@class, "recipe-header__chef")]/span/a/text()')
-
+        img = header.xpath('//img[contains(@itemprop, "image")]/@src')
+        description = header.xpath('//div[contains(@class, "recipe-header__description")]//text()').get()
         time = {
             "prep": {
                 'hrs': header.xpath('//span[contains(@class, "recipe-details__cooking-time-prep")]/'
@@ -78,12 +79,13 @@ class GoodFoodSpider(scrapy.Spider):
         # The full text of the ingredients will be in the content attribute of the li tag
         ingredients = details.xpath('section[contains(@id, "recipe-ingredients")]//'
                                     'div[contains(@class, "ingredients-list__content")]/ul/li/@content')
+
         # TODO Check for final method step, sometimes the beeb offers a suggestion with a link to another recipe
         method = details.xpath('section[contains(@id, "recipe-method")]//'
                                'div[contains(@class, "method")]/ol/li/p/text()')
 
-        recipe_object = Recipe(recipe_title.get(), attrib.get(), nutrition_object, ingredients.getall(),
-                               method.getall(), time, difficulty, servings)
+        recipe_object = Recipe(recipe_title.get(), attrib.get(), description, nutrition_object, ingredients.getall(),
+                               method.getall(), time, difficulty, servings, img.get())
 
         # self, name, author, nutrition, ingredients, method
         return recipe_object.to_dict()
