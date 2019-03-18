@@ -27,13 +27,19 @@ def get_urls_from_data(data_path: str, sample):
         "all_recipes": all_recipes_urls
     }
 
-
-class GoodFoodSpider(scrapy.Spider):
-    name = 'goodfood'
+class RecipeSpider(scrapy.Spider):
+    name = 'recipe'
 
     def __init__(self, sample=0, **kwargs):
         super().__init__(**kwargs)
-        self.start_urls = get_urls_from_data("../data/input/recipes.csv", sample)['bbc']
+        self.loaded_url_dataset = get_urls_from_data("../data/input/recipes.csv", sample)['bbc']
+
+    def parse(self, response):
+        pass
+
+class GoodFoodSpider(scrapy.Spider):
+
+    name = 'goodfood'
 
     def parse(self, response):
         # Information from header includes title, author, cook time, difficulty, servings
@@ -89,4 +95,14 @@ class GoodFoodSpider(scrapy.Spider):
 
         # self, name, author, nutrition, ingredients, method
         return recipe_object.to_dict()
+
+class AllRecipesSpider(RecipeSpider):
+
+    name = 'goodfood'
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.start_urls = super().loaded_url_dataset['all-recipes']
+
+    def parse(self, response):
         pass
