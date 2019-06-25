@@ -16,7 +16,7 @@ class Controller:
         directory = "../data/input"
         filename = "recipes.csv"
         if not os.path.exists(directory):
-            os.mkdir(directory)
+            os.makedirs(directory)
         if not os.path.isfile(directory + "/" + filename):
             recipe_csv_url = "https://docs.google.com/spreadsheets/d/" \
                              "1l3vf7RfApXYlh1b1uMpExacXw4V6jJ0y3wr2yntM8ko/export?format=csv"
