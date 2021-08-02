@@ -6,3 +6,6 @@ data/
 *.json
 
 # Other
+venv/
+.idea/
+*.pyc
